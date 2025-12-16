@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self';">
+
+    <title>Cybersecurity Portfolio | Password Safety</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cybersecurity Awareness Portfolio</h1>
+        <p>Understanding Password Security & Phishing Attacks</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Why Password Security Matters</h2>
+            <p>
+                Weak passwords are one of the leading causes of data breaches.
+                Attackers use techniques such as brute force attacks, credential
+                stuffing, and phishing to gain unauthorized access.
+            </p>
+        </section>
+
+        <section>
+            <h2>Password Strength Checker</h2>
+            <p>Enter a password to see how secure it is.</p>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" aria-label="Password input">
+            <button onclick="checkPassword()">Check Strength</button>
+
+            <p id="result"></p>
+        </section>
+
+        <section>
+            <h2>Phishing Awareness Tip</h2>
+            <button onclick="showTip()">Show Tip</button>
+            <p id="tip"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Cybersecurity Portfolio | Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
