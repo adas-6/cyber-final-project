@@ -30,3 +30,4 @@ function showTip() {
         "Never click suspicious links or provide personal information via email. Legitimate companies will never ask for your password.";
 }
 
+
