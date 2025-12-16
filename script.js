@@ -1,5 +1,18 @@
 "use strict";
 
+// Wait until the HTML is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Wire password button
+    document.getElementById("checkBtn")
+        .addEventListener("click", checkPassword);
+
+    // Wire phishing tip button
+    document.getElementById("tipBtn")
+        .addEventListener("click", showTip);
+});
+
+// Password strength checker
 function checkPassword() {
     const password = document.getElementById("password").value;
     const result = document.getElementById("result");
@@ -19,15 +32,14 @@ function checkPassword() {
         result.textContent = "Strong password ✔";
         result.style.color = "lightgreen";
     } else {
-        result.textContent = "Moderate: Add uppercase letters, numbers, and symbols.";
+        result.textContent =
+            "Moderate: Add uppercase letters, numbers, and symbols.";
         result.style.color = "orange";
     }
 }
 
+// Phishing awareness tip
 function showTip() {
-    const tip = document.getElementById("tip");
-    tip.textContent =
+    document.getElementById("tip").textContent =
         "Never click suspicious links or provide personal information via email. Legitimate companies will never ask for your password.";
 }
-
-
