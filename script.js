@@ -1,11 +1,9 @@
 "use strict";
 
-// Password strength checker
 function checkPassword() {
     const password = document.getElementById("password").value;
     const result = document.getElementById("result");
 
-    // Basic client-side validation
     if (password.length < 8) {
         result.textContent = "Weak: Password should be at least 8 characters.";
         result.style.color = "red";
@@ -26,9 +24,9 @@ function checkPassword() {
     }
 }
 
-// Phishing awareness tip
 function showTip() {
     const tip = document.getElementById("tip");
     tip.textContent =
         "Never click suspicious links or provide personal information via email. Legitimate companies will never ask for your password.";
 }
+
